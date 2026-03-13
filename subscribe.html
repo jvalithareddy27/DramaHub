@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Subscription</title>
+
+<style>
+
+body{
+    background:#000;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+.Subscription{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding:40px;
+}
+
+.Subscription h3{
+    font-size:40px;
+    color:#e50914;
+    margin-bottom:40px;
+}
+
+/* Table Container */
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#111;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+/* Header */
+th{
+    padding:20px;
+    font-size:20px;
+    color:white;
+}
+
+/* Plan titles */
+.basic{
+    background:#1b1b1b;
+}
+
+.standard{
+    background:#2a0d10;
+}
+
+.premium{
+    background:#3b0a0e;
+}
+
+/* Cells */
+td{
+    padding:16px;
+    border-bottom:1px solid #222;
+    font-size:17px;
+}
+
+/* Highlight middle column like Netflix */
+.standard,
+td:nth-child(3){
+    background:#1a0b0d;
+}
+
+/* Choose plan button */
+.plan-btn{
+    background:#e50914;
+    border:none;
+    padding:12px 20px;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.plan-btn:hover{
+    background:#ff1f2e;
+    transform:scale(1.08);
+    box-shadow:0 0 12px #e50914;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="Subscription">
+
+<h3>Choose Your Plan</h3>
+
+<table>
+
+<thead>
+<tr>
+<th></th>
+<th class="basic">Basic</th>
+<th class="standard">Standard</th>
+<th class="premium">Premium</th>
+</tr>
+
+
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>HD Available</td>
+<td>❌</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+
+<tr>
+<td>4K + HDR</td>
+<td>❌</td>
+<td>❌</td>
+<td>✔️</td>
+</tr>
+
+<tr>
+<td>Watch on TV / Laptop</td>
+<td>❌</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+
+<tr>
+<td>Mobile & Tablet</td>
+<td>✔️</td>
+<td>✔️</td>
+<td>✔️</td>
+</tr>
+
+<tr>
+<td>Screens at the same time</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<th></th>
+<th><button class="plan-btn">Choose Plan</button></th>
+<th><button class="plan-btn">Choose Plan</button></th>
+<th><button class="plan-btn">Choose Plan</button></th>
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+</body>
+</html>
