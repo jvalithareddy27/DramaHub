@@ -1,0 +1,476 @@
+
+
+body{
+    background-color:white;
+    margin-top: 90px;
+    color:white;
+}
+button{
+    width: 300px;          /* smaller width */
+    padding: 6px 10px;     /* smaller padding */
+    font-size: 16px;
+    background: linear-gradient(to right,#ff512f,#dd2476);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;          /* center horizontally */
+    display: block;        /* needed for margin:auto to work */
+    transition: 0.3s;
+}
+
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background-color:#e50914;
+color:white;
+text-decoration:none;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+}
+
+.btn:hover{
+background-color:#f6121d;
+}
+button:hover{
+    background: linear-gradient(to right, #dd2476, #ff512f);
+    transform: scale(1.1);
+}
+
+.hero{
+    height: 100vh;
+    background: url('https://www.plex.tv/wp-content/uploads/2025/03/Watch-Free-Hero-2048x1152-1.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    color: azure;
+}
+
+.hero h1{
+    font-size: 60px;
+    color: #ccc;
+}
+#he
+{
+    text-decoration: none;
+}
+#hi
+{
+    text-decoration: none;
+}
+#enter{
+    background-color: rgb(110, 78, 170);
+    border: solid 1px;
+    border-radius: 2px;
+    cursor: pointer;
+    display: block;
+margin: 20px auto;
+    padding: 5px;
+    transition: all 0.3s ease; 
+    width:150px;
+}
+#enter:hover {
+    background-color: rgb(161, 126, 231);
+    cursor: grab;
+}
+#dark
+{
+    display: none;
+}
+.mode
+{
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 30px;
+}
+a:visited {
+    color: inherit;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.page{
+    background:linear-gradient(to right,black, black);
+    color: white;
+    transition: 0.3s;
+
+}
+#dark:checked~.page{
+background: linear-gradient(to left,white, white);
+color: black;
+}
+
+#dark:checked ~ .page header {
+    background-color: black;
+}
+
+#dark:checked ~ .page .navbar a {
+    color: white;
+}
+header{
+    color:aliceblue;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    padding: 15px;
+    background-color: black;
+}
+header h1{
+    color: #e50909;   /* Netflix-style red */
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.navbar
+{
+    text-decoration: none;
+    color: yellow;
+    padding: 10px;
+   
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+}
+    
+.navbar a:hover
+{
+    color:yellow;
+}
+
+.list
+{
+    border-radius: 10px;
+    padding:10px;
+    font-size: 25px;
+}
+.task{
+    display:flex;
+     position:fixed;
+    top:75px;
+    left:-20px;
+    width: 100%;
+    padding: 15px 30px;
+    background:linear-gradient(to right,black,black);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bolder;
+    font-size: 20px;
+    transition: color 0.3s;
+    margin: 0 20px;
+    gap: 20px;
+}
+  .icon
+  {
+    position: fixed;
+    top: 90px;
+    right:30px;
+    font-size: 50px;
+    transition: 0.4s;
+  } 
+  .icon:hover{
+    transform: rotate(360deg);
+  }
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.icon.spin {
+    animation: spin 2s linear infinite; /* keeps spinning */
+}
+
+
+.movie
+{
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    gap:15px;
+    overflow-x: auto ; 
+    scrollbar-width: none;  
+    -ms-overflow-style: none;
+}
+.aa ,.show, .cartn ,.kdr{
+    
+    color:white;
+    border-radius: 15px;
+    max-width: auto;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.aa:hover
+{
+    
+     transform: scale(1.2);
+     border: solid 2px white;
+     background-color: rgb(119, 119, 119);
+     cursor: pointer;;
+}
+.video-wrapper{
+position:relative;
+padding-bottom:56.25%;
+height:0;
+}
+
+.video-wrapper iframe{
+position:absolute;
+width:100%;
+height:100%;
+}
+.tvshows
+{
+    display: flex;
+    flex-direction: row;
+    gap: 15PX;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style:none;
+}
+.sub
+{
+    background:#e50914;
+    border:none;
+    height: 50px;
+    width: 140px;
+    padding:3px 5px;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+    margin-left: 100px;
+}
+
+
+.show:hover
+{
+     transform: scale(1.2);
+      border: solid 2px white;
+     background-color: rgb(119, 119, 119);
+     cursor: pointer;;
+}
+.anime
+{
+    display: flex;
+    flex-direction: row;
+    gap: 15PX;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style:none;
+}
+
+.cartn:hover
+{
+     transform: scale(1.2);
+      border: solid 2px white;
+     background-color: rgb(119, 119, 119);
+     cursor: pointer;;
+}
+.drama
+{
+    display: flex;
+    flex-direction: row;
+    gap: 15PX;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style:none;
+}
+
+.kdr:hover
+{
+     transform: scale(1.2);
+      border: solid 2px white;
+     background-color: rgb(119, 119, 119);
+     cursor: pointer;
+}
+
+
+#login {
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    width: 300px;
+    justify-content: center;
+    font-size: 25px;
+    margin:auto;
+    border:white;
+    border-radius: 5px;
+    
+}
+.loginpg,.heropg
+{
+    background: url('https://www.plex.tv/wp-content/uploads/2025/03/Watch-Free-Hero-2048x1152-1.png') center/cover no-repeat;
+}
+legend
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.signuppg
+{
+    background: url('https://www.plex.tv/wp-content/uploads/2025/03/Watch-Free-Hero-2048x1152-1.png') center/cover no-repeat;
+}
+.review-box{
+max-width:500px;
+margin:auto;
+padding:20px;
+background:#111;
+border-radius:10px;
+}
+
+.stars{
+font-size:35px;
+cursor:pointer;
+color:gray;
+}
+
+.star.active{
+color:gold;
+}
+
+textarea{
+width:100%;
+height:80px;
+margin-top:10px;
+padding:8px;
+border-radius:5px;
+}
+
+#reviews{
+margin-top:20px;
+}
+
+.review{
+border-bottom:1px solid gray;
+padding:10px 0;
+}
+   
+
+
+#signup
+{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    width:300px;
+    font-size: 25px;
+    margin:auto;
+   
+}
+@media(max-width:500px){
+
+#login , #signup{
+    width:100%;
+    padding: 15px;
+    font: 15px;
+}
+.task{
+    display: none;
+
+}
+.aa ,.show, .cartn ,.kdr
+{
+    border: solid 2px white;
+    color:white;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.movie ,.tvshows ,.anime ,.drama{
+    gap:5px
+}
+.media-container{
+            max-width:auto;
+            border: 1px solid;
+            border-radius: 15px;
+            margin: auto;
+            padding:0.5em;
+
+
+
+        }
+        .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    width: auto;
+    height: auto;
+}
+
+
+}
+@media(max-width:350px){
+
+#login , #signup{
+    width:100%;
+    padding: 15px;
+    font: 15px;
+}
+.task{
+    display: none;
+
+}
+.aa ,.show, .cartn ,.kdr
+{
+    height: 150px;
+    width: 100px;
+    border: solid 2px white;
+    color:white;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.aa img {
+height: 150px;
+width:100px;
+}
+.movie ,.tvshows ,.anime ,.drama{
+    gap:5px
+}
+.media-container{
+            max-width:auto;
+            border: 1px solid;
+            border-radius: 15px;
+            margin: auto;
+            padding:0.5em;
+
+
+
+        }
+        .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    width: auto;
+    height: auto;
+}
+
+
+}
